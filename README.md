@@ -32,6 +32,7 @@ This is a URL shortener built with Laravel.
    by change config/cache  'default' => env('CACHE_STORE', 'redis') to 'default' => env('CACHE_STORE', 'database')
 
    and change .env
+    ```sh
     CACHE_DRIVER=database
     SESSION_DRIVER=file
     QUEUE_CONNECTION=database
