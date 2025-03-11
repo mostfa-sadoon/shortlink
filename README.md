@@ -23,6 +23,7 @@ This is a URL shortener built with Laravel.
 ## Caching Configuration
 - This project requires Redis for caching, session handling, and queues. If Redis is not installed or running, you can change the cache driver to database.
    .env
+     ```sh
     CACHE_DRIVER=redis
     SESSION_DRIVER=redis
     QUEUE_CONNECTION=redis
