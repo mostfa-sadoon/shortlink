@@ -30,7 +30,6 @@ class UrlShortenerController extends Controller
             'short_code' => $short_code
         ]);
 
-
         Cache::put("shortened_url:{$short_code}", $shortenedUrl, 3600);
 
         return view('shortlink',compact('shortenedUrl'));
